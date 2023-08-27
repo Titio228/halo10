@@ -1,0 +1,21 @@
+@import "./_variables.scss";
+@import "./_fonts.scss";
+@import "./_designs.scss";
+
+@mixin xs {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (min-width: 768px) and (max-width: 2048px) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media screen and (min-width: 2048px) and (max-width: 5000px) {
+        @content;
+    }
+}

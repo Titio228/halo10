@@ -1,0 +1,78 @@
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.login .back {
+  margin-left: 2rem;
+}
+.login .back .fa-backward-step {
+  color: #ff5e57;
+  font-size: 2rem;
+}
+.login .nav-link {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+.login .nav-link .link-login {
+  width: 50%;
+  height: 50px;
+  border: 2px solid #ffd32a;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffdd59;
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+.login .nav-link .link-login:hover {
+  border-color: #ff5e57;
+  color: #ff5e57;
+  transform: scale(1.1);
+}
+.login .nav-link .link-hidden-connection,
+.login .nav-link .link-hidden-inscription {
+  display: none;
+}
+.login .outlet {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 2048px) {
+  .login .back {
+    margin: 2rem;
+  }
+  .login .nav-link {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 2048px) and (max-width: 5000px) {
+  .login {
+    width: 75%;
+    margin: auto;
+  }
+  .login .back {
+    margin: 2rem;
+  }
+  .login .nav-link {
+    width: 50%;
+    margin: auto;
+  }
+}/*# sourceMappingURL=Login.css.map */

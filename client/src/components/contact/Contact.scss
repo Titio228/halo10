@@ -1,0 +1,47 @@
+@import "../style/_vues.scss";
+@import "../style/_fonts.scss";
+@import "../style/_designs.scss";
+@import "../style/_variables.scss";
+
+.contact {
+    width: $width;
+    height: $height;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .title-contact {
+        color: $color-title-primary;
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+
+    .phone,
+    .email,
+    .planning {
+        border: 2px solid $border-color-primary;
+        border-radius: $border-radius;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        margin: 1rem 0;
+
+        h4 {
+            color: $color-title-primary;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: $color-para-primary;
+
+            span {
+                color: blue;
+            }
+        }
+    }
+}

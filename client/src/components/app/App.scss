@@ -1,0 +1,13 @@
+@import "../style/_vues.scss";
+@import "../style/_fonts.scss";
+@import "../style/_designs.scss";
+@import "../style/_variables.scss";
+
+.app {
+    width: $width;
+    min-height: $height-vh;
+    background-color: $background-color-primary;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}

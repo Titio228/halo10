@@ -1,0 +1,52 @@
+.inscription {
+  width: 100%;
+  height: 100%;
+  margin: 0 2rem;
+}
+.inscription .registration-form {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.inscription .registration-form .form-group {
+  margin-bottom: 20px;
+}
+.inscription .registration-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ffdd59;
+}
+.inscription .registration-form .form-group input,
+.inscription .registration-form .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.inscription .registration-form .submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.inscription .registration-form .submit-button:hover {
+  background-color: #0056b3;
+}
+@media screen and (min-width: 768px) and (max-width: 2048px) {
+  .inscription {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 2048px) and (max-width: 5000px) {
+  .inscription {
+    width: 30%;
+  }
+}/*# sourceMappingURL=Inscription.css.map */

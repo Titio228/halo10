@@ -1,0 +1,133 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .link-container {
+  width: 100%;
+  display: flex;
+}
+.navbar .link-container .link-navbar {
+  width: 100%;
+  line-height: 2.5rem;
+  border: 1px solid #f1f2f6;
+  text-align: center;
+  text-decoration: none;
+  color: #ffd32a;
+  background-color: #ffa801;
+  font-size: 1.5rem;
+  font-family: "Roboto Slab", serif;
+}
+.navbar .link-container .active {
+  background-color: #1e272e;
+}
+.navbar .arrow-container {
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: #ffdd59;
+}
+.navbar .arrow-container .fa-arrow-turn-down,
+.navbar .arrow-container .fa-arrow-turn-up {
+  width: 100%;
+  background: linear-gradient(45deg, #3c40c6, #05c46b, #ffa801, #ff3f34);
+  background-size: 400% 400%;
+  animation: moveArrow 4s linear infinite;
+  border-radius: 0 0 1rem 1rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+@keyframes moveArrow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.navbar .display-navbar-admin {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar .display-navbar-admin .navbarAdmin {
+  width: 100%;
+  background-color: #ff5e57;
+  line-height: 2.5rem;
+  border: 1px solid #f1f2f6;
+  text-align: center;
+  color: #ffdd59;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+}
+.navbar .display-navbar-admin .navbarAdmin:hover {
+  background-color: orangered;
+}
+.navbar .hidden-navbar-admin {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar .link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease-in-out;
+    overflow: hidden;
+    height: 0;
+  }
+  .navbar .arrow-container {
+    display: block;
+  }
+  .navbar .displayNavbar {
+    animation: displayNavbar 0.5s linear forwards;
+  }
+  @keyframes displayNavbar {
+    from {
+      height: 0;
+    }
+    to {
+      height: 210px;
+    }
+  }
+  .navbar .hiddenNavbar {
+    animation: hiddenNavbar 0.5s linear forwards;
+  }
+  @keyframes hiddenNavbar {
+    from {
+      height: 210px;
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 2048px) {
+  .navbar .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar .arrow-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 2048px) and (max-width: 5000px) {
+  .navbar .link-container {
+    width: 75%;
+  }
+  .navbar .arrow-container {
+    display: none;
+  }
+  .navbar .display-navbar-admin {
+    width: 75%;
+    margin: auto;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

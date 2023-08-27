@@ -1,0 +1,112 @@
+@import "../style/_vues.scss";
+@import "../style/_fonts.scss";
+@import "../style/_designs.scss";
+@import "../style/_variables.scss";
+
+.dead {
+    width: $width;
+    height: $height;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    input {
+        line-height: 2rem;
+        width: 75%;
+        border-radius: $border-radius;
+        text-align: center;
+        border: none;
+        outline: none;
+    }
+
+    .Table-users {
+        width: $width;
+        margin-top: 1rem;
+
+        tr {
+            width: $width;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .Td-title {
+                border: 1px solid $border-color-primary;
+                background-color: $background-color-secondary;
+                width: $width;
+                border-radius: $border-radius $border-radius 0 0;
+                text-align: center;
+                color: $color-title-primary;
+                font-weight: 600;
+                line-height: 1.5rem;
+                margin: 0 0.2rem;
+            }
+
+            .Td-item {
+                border: 1px solid $border-color-primary;
+                width: $width;
+                text-align: center;
+                color: $color-entity-primary;
+                line-height: 1.5rem;
+                margin: 0 0.2rem;
+            }
+        }
+    }
+
+    .displayListEmpty {
+        display: block;
+        width: $width;
+
+        p {
+            text-align: center;
+            color: $color-para-secondary;
+            font-size: 2rem;
+        }
+    }
+
+    .hiddenListEmpty {
+        display: none;
+    }
+
+    @include xs() {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        overflow: scroll;
+
+        input {
+            margin-left: 1rem;
+            border: 2px red solid;
+        }
+
+        .Table-users {
+            tr {
+                .Td-title,
+                .Td-item {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    @include lg() {
+        input {
+            margin-top: 1rem;
+            max-width: 30%;
+        }
+
+        .Table-users {
+            padding: 0 2rem;
+        }
+    }
+
+    @include xxl() {
+        width: 75%;
+        margin: auto;
+
+        input {
+            margin-top: 1rem;
+            max-width: 30%;
+        }
+    }
+}

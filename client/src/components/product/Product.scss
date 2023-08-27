@@ -1,0 +1,72 @@
+@import "../style/_vues.scss";
+@import "../style/_fonts.scss";
+@import "../style/_designs.scss";
+@import "../style/_variables.scss";
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .title-subscription {
+        margin: 2rem 0;
+
+        h3 {
+            color: $color-title-primary;
+            font-size: 2.5rem;
+        }
+    }
+
+    .subscriptions {
+        width: $width;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .card1 {
+            width: $width-cards;
+            height: $height-cards;
+            border: 2px solid $border-color-primary;
+            border-radius: $border-radius;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+            background-color: $background-color-secondary;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .card1:hover {
+            background-color: #ef5777;
+            transform: scale(1.1);
+        }
+    }
+
+    .displayListEmpty {
+        display: block;
+        width: $width;
+
+        p {
+            text-align: center;
+            color: $color-para-secondary;
+            font-size: 2rem;
+        }
+    }
+
+    .hiddenListEmpty {
+        display: none;
+    }
+
+    @include xxl {
+        .subscriptions {
+            .card1 {
+                width: 400px;
+                height: 450px;
+                font-size: 3rem;
+            }
+        }
+    }
+}
